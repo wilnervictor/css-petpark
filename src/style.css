@@ -1,1 +1,35 @@
+@import url('./css/header.css');
+@import url('./css/destaque.css');
 
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --natural-cinza-escuro:#444;
+    --neutras-cinza-medio:#B9B9B9;
+    --neutras-branco:#fff;
+    --primarias-coral:#EE6451;
+    --primarias-ocre:#C13724;
+    --secudarias-bege:#FFF5EB;
+    --secudarias-bege2:#F5E6D6;
+    --terciarias-verde1:#CBDA74;
+    --terciarias-verde2:#A2B72B;
+    --terciarias-verde3:#EFF2E1;
+    --h1-sigmar:4.5rem;
+    --h2-sigmar:2.635rem;
+    --h3-sigmar:2.438rem;
+    --h4-sigmar:1.938rem;
+    --h5-sigmar:1.563rem;
+    --font-family-sigmar:"Sigmar", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutras-branco);
+
+    .container{
+        width: 1200px;
+    }
+}
