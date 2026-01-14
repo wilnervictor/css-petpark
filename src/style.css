@@ -1,5 +1,11 @@
 @import url('./css/header.css');
 @import url('./css/destaque.css');
+@import url('./css/servicos.css');
+@import url('./css/planos.css');
+@import url('./css/ofertas.css');
+@import url('./css/parceiros.css');
+@import url('./css/newsletter.css');
+@import url('./css/rodape.css');
 
 *{
     box-sizing: border-box;
@@ -16,20 +22,82 @@
     --terciarias-verde1:#CBDA74;
     --terciarias-verde2:#A2B72B;
     --terciarias-verde3:#EFF2E1;
+    --cor-primaria-box-shadow: rgb(193 55 36 / 40%);
+    --cor-secudaria-box-shadow: rgb(162 183 43 / 40%);
     --h1-sigmar:4.5rem;
     --h2-sigmar:2.635rem;
     --h3-sigmar:2.438rem;
     --h4-sigmar:1.938rem;
     --h5-sigmar:1.563rem;
     --font-family-sigmar:"Sigmar", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-size-xxxl: 4.5rem;
+    --font-size-xxl: 2.625rem;
+    --fonte-size-xl: 2.438rem;
+    --fonte-size-l: 1.938rem;
+    --fonte-size-xm: 1.563rem;
+    --fonte-size-m: 1.25rem;
+    --fonte-size-b: 1rem;
+    --fonte-size-s: 0.813rem;
+    --line-height: 120%;
+    --padding-xs: 0.25rem;
+    --padding-s: 0.5rem;
+    --padding-m: 1rem;
+    --padding-l: 1.5rem;
+    --padding-xl: 2rem;
+    --padding-xxl: 2.5rem;
+    --padding-3xl: 3.75rem;
+    --padding-4xl: 4rem;
+    --padding-5xl: 4.75rem;
+    --gap-xs: 0.25rem;
+    --gap-s: 0.5rem;
+    --gap-m: 1rem;
+    --gap-l: 1.5rem;
+    --gap-xl: 2rem;
+    --gap-xxl: 2.5rem;
+    --gap-xxxl: 6rem;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--font-family-sigmar);
+    line-height: var(--line-height);
+}
+
+h1{
+  font-size: var(--font-size-xxxl);
+}
+
+h2{
+  font-size: var(--font-size-xxl);
+}
+
+h3{
+  font-size: var(--fonte-size-xl);
+}
+
+h4{
+  font-size: var(--fonte-size-l);
+}
+
+h5{
+  font-size: var(--fonte-size-xm);
 }
 
 body{
     width: 100%;
     height: 100%;
     background-color: var(--neutras-branco);
-
-    .container{
-        width: 1200px;
-    }
+    font-family: var(--font-poppins);
+    
+    
 }
+
+.container{
+        width: 1200px;
+
+        @media screen and (width <= 768px) {
+          width: 648px;
+        }
+    }
+
+
